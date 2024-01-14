@@ -1,15 +1,20 @@
 import Link from "next/link"
-const miLink = "www.google.com"
+
+const rutaHome = "app"
+const rutaBlog = "blog"
+const rutaVideojuego = "videojuego"
+const rutaEcomerce = "ecomerce"
+const rutaFormulario = "formulario"
 
 export default function Navbar(){
     return(
         <nav className="container mx-auto">
             <ul className="flex space-x-4 text-white">
-                <li><Link href={miLink} className="hover:underline">Home</Link></li>
-                <li><Link href={miLink} className="hover:underline">Blog</Link></li>
-                <li><Link href={miLink} className="hover:underline">Videojuego</Link></li>
-                <li><Link href={miLink} className="hover:underline">e.comerce</Link></li>
-                <li><Link href={miLink} className="hover:underline">Formulario Contacto</Link></li>
+                <li><Link href={`/`} className="hover:underline">Home</Link></li>
+                <li><Link href={`/${rutaBlog}`} className="hover:underline">Blog</Link></li>
+                <li><Link href={`/${rutaVideojuego}`} className="hover:underline">Videojuego</Link></li>
+                <li><Link href={`/${rutaEcomerce}`} className="hover:underline">e.comerce</Link></li>
+                <li><Link href={`/${rutaFormulario}`} className="hover:underline">Formulario Contacto</Link></li>
             </ul>
         </nav>
     )

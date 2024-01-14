@@ -4,7 +4,7 @@ import Navbar from './components/navbar'
 export default function Home() {
   return (
     <>
-      <header className='bg-blue-500 p-4'>
+      <header className='bg-indigo-500 p-4'>
         <Navbar />
       </header>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
